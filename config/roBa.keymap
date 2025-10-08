@@ -33,6 +33,16 @@
             bindings = <&kp P>;
             key-positions = <8 9>;
         };
+
+        Language1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <17 18>;
+        };
+
+        Language2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
