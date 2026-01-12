@@ -76,7 +76,8 @@
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 6 INT_HENKAN  &kp SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &bt BT_CLR
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            // sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>; -- figmaでズーム動かないので+-に割り当て変更した
+            sensor-bindings = <&inc_dec_kp PLUS MINUS>;
         };
 
         FUNCTION {
