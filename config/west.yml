@@ -4,13 +4,17 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: kumamuk-git
-      revision: main
+projects:
+  - name: zmk
+    remote: zmkfirmware
+    revision: main
+    import: app/west.yml
+
+  # 旧：外部 PMW3610 ドライバ
+  # Zephyr 4.x 以降では本体に統合されたため不要
+  # - name: zmk-pmw3610-driver
+  #   remote: kumamuk-git
+  #   revision: main
+
   self:
     path: config
