@@ -18,10 +18,20 @@
 #
 ---
 include:
- - board: seeeduino_xiao_ble
-   shield: roBa_R
-   snippet: studio-rpc-usb-uart
- - board: seeeduino_xiao_ble
-   shield: roBa_L
- - board: seeeduino_xiao_ble
-   shield: settings_reset
+  # 旧 board 名（Zephyr 4.x で削除）
+  # - board: seeeduino_xiao_ble
+  #   shield: roBa_R
+  #   snippet: studio-rpc-usb-uart
+  # - board: seeeduino_xiao_ble
+  #   shield: roBa_L
+  # - board: seeeduino_xiao_ble
+  #   shield: settings_reset
+
+  # 現行 board 名
+  - board: xiao_ble
+    shield: roBa_R
+    snippet: studio-rpc-usb-uart
+  - board: xiao_ble
+    shield: roBa_L
+  - board: xiao_ble
+    shield: settings_reset
