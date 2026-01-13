@@ -65,7 +65,7 @@
         spi-max-frequency = <2000000>;
     
         /* Zephyr 4.x 対応：必須 */
-        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        motion-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
     };
 
 };
